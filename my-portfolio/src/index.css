@@ -80,7 +80,7 @@ ul {
 }
 
 .navbar-title {
-  color: #ECEFCA; /* Açık krem */
+  color: #213448; /* Açık krem */
   font-size: 1.5rem;
 }
 
@@ -91,7 +91,7 @@ ul {
 }
 
 .navbar-links li a {
-  color: #ECEFCA; /* Açık krem */
+  color: #213448; /* Açık krem */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -277,7 +277,7 @@ ul {
 }
 
 .project-item {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(33, 52, 72, 0.05);
@@ -285,13 +285,18 @@ ul {
 }
 
 .project-item:hover {
-  background-color: #94B4C1; /* Açık mavi-gri */
+  background-color: #213448; /* Açık mavi-gri */
   box-shadow: 0 4px 12px rgba(33, 52, 72, 0.1);
 }
 
 .project-title {
   font-size: 1.1rem;
   color: #213448;
+}
+
+.project-title-1 {
+  font-size: 1.1rem;
+  color: #3f77ae;
 }
 
 /* Proje Kartları */

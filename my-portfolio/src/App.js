@@ -151,7 +151,7 @@ function App() {
 
   <div className="project-list">
     <div className="project-item">
-      <strong className="project-title">
+      <strong className="project-title-1">
         Lazy Sloth Pomodoro Uygulaması & Web Tasarımı
       </strong><br />
       Verimlilik ve zaman yönetimini destekleyen Pomodoro sistemi, günlük/haftalık çalışma süresi takibi ve site engelleme özellikleri barındırır. <br />
@@ -159,7 +159,7 @@ function App() {
     </div>
 
     <div className="project-item">
-      <strong className="project-title">
+      <strong className="project-title-1">
         Film Kataloğu Sitesi
       </strong><br />
       TMDB API üzerinden popüler filmleri listeler, arama yapmaya olanak sağlar. <br />
@@ -167,7 +167,7 @@ function App() {
     </div>
 
     <div className="project-item">
-      <strong className="project-title">
+      <strong className="project-title-1">
         Hava Durumu Uygulaması
       </strong><br />
       Konuma göre anlık hava durumu bilgisi sunar. <br />
@@ -175,7 +175,7 @@ function App() {
     </div>
 
     <div className="project-item">
-      <strong className="project-title">
+      <strong className="project-title-1">
         Robot Kol
       </strong><br />
       Python ile bilgisayar üzerinden kontrol edilebilen robotik kol projesi. <br />
@@ -183,7 +183,7 @@ function App() {
     </div>
 
     <div className="project-item">
-      <strong className="project-title">
+      <strong className="project-title-1">
         Akıllı Sera
       </strong><br />
       Sıcaklık, nem ve ışık sensörleriyle verileri okuyup, otomatik yönetim sağlayan sera sistemi. <br />
