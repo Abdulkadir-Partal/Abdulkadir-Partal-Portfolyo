@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/Abdulkadir-Partal-Portfolyo/static/css/main.143e0193.css",
-    "main.js": "/Abdulkadir-Partal-Portfolyo/static/js/main.433ada47.js",
-    "static/media/deneme1.jpg": "/Abdulkadir-Partal-Portfolyo/static/media/deneme1.95cc81f04e5f53c15cf0.jpg",
+    "main.css": "/Abdulkadir-Partal-Portfolyo/static/css/main.0d1832e9.css",
+    "main.js": "/Abdulkadir-Partal-Portfolyo/static/js/main.fc9f4c98.js",
     "index.html": "/Abdulkadir-Partal-Portfolyo/index.html",
-    "main.143e0193.css.map": "/Abdulkadir-Partal-Portfolyo/static/css/main.143e0193.css.map",
-    "main.433ada47.js.map": "/Abdulkadir-Partal-Portfolyo/static/js/main.433ada47.js.map"
+    "main.0d1832e9.css.map": "/Abdulkadir-Partal-Portfolyo/static/css/main.0d1832e9.css.map",
+    "main.fc9f4c98.js.map": "/Abdulkadir-Partal-Portfolyo/static/js/main.fc9f4c98.js.map"
   },
   "entrypoints": [
-    "static/css/main.143e0193.css",
-    "static/js/main.433ada47.js"
+    "static/css/main.0d1832e9.css",
+    "static/js/main.fc9f4c98.js"
   ]
 }
