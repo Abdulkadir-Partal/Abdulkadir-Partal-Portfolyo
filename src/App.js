@@ -130,7 +130,7 @@ function App() {
     Yapay zeka ve görüntü işleme ile mikro ifadeleri analiz ederek stres kaynaklı yalan tespiti yapan TÜBİTAK destekli bitirme projesi. <br />
     <em>Kullanılan Teknolojiler:</em> Python, OpenCV, Mediapipe, scikit-learn
     </div>
-    <img src="/Abdulkadir-Partal-Portfolyo/images/pr1.png" alt="Body Language AI" className="project-image" />
+    <img src="/Abdulkadir-Partal-Portfolyo/public/images/pr1.png" alt="Body Language AI" className="project-image" />
   </div>
   
 
@@ -140,7 +140,7 @@ function App() {
     Gerçek zamanlı yüz tanıma ile kimlik doğrulama işlemlerini gerçekleştiren uygulama. Staj süresince geliştirildi. <br />
     <em>Kullanılan Teknolojiler:</em> Python, OpenCV, Flask, Yolov5
     </div>
-    <img src="/Abdulkadir-Partal-Portfolyo/images/pr2.png" alt="Body Language AI" className="project-image" />
+    <img src="/Abdulkadir-Partal-Portfolyo/public/images/pr2.png" alt="Body Language AI" className="project-image" />
   </div>
 
   </div>
