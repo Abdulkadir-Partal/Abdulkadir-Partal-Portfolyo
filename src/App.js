@@ -17,7 +17,7 @@ function App() {
     </div>
 
     <div className="home-image">
-      <img src="/tasarım.png" alt="Tasarım" />
+      <img src={`${process.env.PUBLIC_URL}/images/tasarım.png`} alt="Tasarım" />
     </div>
   </div>
 </section>
@@ -130,7 +130,7 @@ function App() {
     Yapay zeka ve görüntü işleme ile mikro ifadeleri analiz ederek stres kaynaklı yalan tespiti yapan TÜBİTAK destekli bitirme projesi. <br />
     <em>Kullanılan Teknolojiler:</em> Python, OpenCV, Mediapipe, scikit-learn
     </div>
-    <img src="/pr1.png" alt="Body Language AI" className="project-image" />
+    <img src={`${process.env.PUBLIC_URL}/images/pr1.png`} alt="Body Language AI" className="project-image" />
   </div>
   
 
@@ -140,7 +140,7 @@ function App() {
     Gerçek zamanlı yüz tanıma ile kimlik doğrulama işlemlerini gerçekleştiren uygulama. Staj süresince geliştirildi. <br />
     <em>Kullanılan Teknolojiler:</em> Python, OpenCV, Flask, Yolov5
     </div>
-    <img src="/pr2.png" alt="Body Language AI" className="project-image" />
+    <img src={`${process.env.PUBLIC_URL}/images/pr2.png`} alt="Body Language AI" className="project-image" />
   </div>
 
   </div>
@@ -216,7 +216,7 @@ function App() {
     </div>
 
     <div className="contact-image">
-      <img src="/profile.jpeg" alt="Benim Fotoğrafım" />
+      <img src={`${process.env.PUBLIC_URL}/images/profile.jpeg`} alt="Benim Fotoğrafım" />
     </div>
   </div>
 </section>
