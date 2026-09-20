@@ -128,7 +128,11 @@
                   </div>
                   <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2" x-text="p.title"></h3>
                   <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4" x-text="p.desc"></p>
-                  <div class="flex items-center justify-end">
+                  <div class="flex items-center justify-between gap-4">
+                    <a x-show="p.github" :href="p.github" class="inline-flex items-center gap-2 text-xs font-medium text-zinc-600 dark:text-zinc-300 hover:text-accent transition-colors" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/icons/github.png" alt="" class="w-4 h-4" aria-hidden="true">
+                      <span>GitHub</span>
+                    </a>
                     <span class="text-xs text-zinc-400" x-text="p.year"></span>
                   </div>
                 </div>
@@ -182,7 +186,7 @@
         ],
 
         allProjects: [
-          { id:1, title:'Recall Vocab — AI Flashcards', category:'ai', categoryLabel:'AI & CV', tags:['Django','Supabase','AI'], year:'2025', desc:'AI-powered vocabulary learning application with CEFR-level definitions and generated flashcards.', img:'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80' },
+          { id:1, title:'Recall Vocab — AI Flashcards', category:'ai', categoryLabel:'AI & CV', tags:['Django','Supabase','AI'], year:'2025', desc:'AI-powered vocabulary learning application with CEFR-level definitions and generated flashcards.', img:'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80', github:'https://github.com/Abdulkadir-Partal/RecallVocab' },
           { id:2, title:'Lazy Sloth — Full Stack Web App', category:'web', categoryLabel:'Web & Backend', tags:['Django REST','React','JWT'], year:'2025', desc:'Full-stack application with authentication, role-based access, CRUD operations and admin management.', img:'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&q=80' },
           { id:3, title:'Price Prediction & Product Analytics', category:'analytics', categoryLabel:'Analytics', tags:['Python','Django','Machine Learning'], year:'2025', desc:'Product analytics system combining web scraping, historical price data, statistical analysis and machine learning.', img:'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80' },
           { id:4, title:'AI Body Language & Lie Detection', category:'ai', categoryLabel:'AI & CV', tags:['YOLO','MediaPipe','TÜBİTAK'], year:'2025', desc:'Computer vision research project analyzing body language and micro-expressions for AI-based lie detection.', img:'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=700&q=80' },

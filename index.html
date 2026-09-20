@@ -74,6 +74,11 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 
 #certificates article{display:flex;flex-direction:column}
 #certificates article > p:first-of-type{margin-top:auto}
+#certificates article img{display:block;width:5rem!important;height:auto!important;margin:0;padding:0;border-radius:0;background:transparent!important;object-fit:contain;filter:none;max-height:3.2rem!important}
+#certificates article img[alt="IBM"],#certificates article img[alt="Boğaziçi University"]{width:4.2rem!important;max-height:3.2rem!important}
+#certificates article img[alt="interTech"],#certificates article img[alt="Coursera"]{width:6.2rem!important;max-height:4rem!important}
+#certificates article .flex.items-center.gap-3{align-items:center}
+#certificates article .flex.items-center.gap-3 img{max-height:3.2rem}
 
 /* stacked project showcase */
 .project-stack{display:grid;gap:1.5rem}
@@ -87,8 +92,8 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 .project-image{width:100%;height:100%;object-fit:contain;object-position:center;display:block;background:#000;transform:none;transition:transform .42s ease, opacity .42s ease;will-change:transform, opacity}
 .project-showcase:hover .project-image{transform:none}
 .project-media.is-animating .project-image{opacity:0.35}
-.project-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;display:flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border:none;border-radius:9999px;background:rgba(255,255,255,.8);color:#18181b;backdrop-filter:blur(10px);box-shadow:0 12px 28px -18px rgba(15,23,42,.5);cursor:pointer;transition:all .2s ease}
-.project-arrow:hover{background:#fff;transform:translateY(-50%) scale(1.05)}
+.project-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;display:flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border:none;border-radius:9999px;background:rgba(255,255,255,.8);color:#18181b;opacity:.55;backdrop-filter:blur(10px);box-shadow:0 12px 28px -18px rgba(15,23,42,.5);cursor:pointer;transition:all .2s ease}
+.project-arrow:hover{background:#fff;opacity:1;transform:translateY(-50%) scale(1.05)}
 .project-arrow.left{left:1rem}.project-arrow.right{right:1rem}
 .project-arrow svg{width:1rem;height:1rem}
 .project-copy{padding:1rem 0.5rem}
@@ -225,17 +230,25 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
         <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">What I work with</p>
       <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Technical expertise</h2>
     </div>
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
 
       <article class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
         <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
           <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
         </div>
-        <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Artificial Intelligence</h3>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Deep learning, machine learning and computer vision solutions using Python, PyTorch, TensorFlow, YOLO, OpenCV and scikit-learn.</p>
+        <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">AI/ML</h3>
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Machine learning, predictive modeling, deep learning and intelligent automation using Python, PyTorch, TensorFlow, scikit-learn and modern AI workflows.</p>
       </article>
 
-      <article class="reveal d2 card-h group bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800 hover:border-accent">
+      <article class="reveal d2 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
+        <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
+          <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16V8m0 0l4-4 4 4m-8 0h12m0 8v-8m0 8l-4 4-4-4m8 0H4"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7h5v5"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Image Processing</h3>
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Image enhancement, feature extraction, object detection, segmentation and vision pipelines for real-time visual analysis and automation.</p>
+      </article>
+
+      <article class="reveal d3 card-h group bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800 hover:border-accent">
         <div class="w-12 h-12 flex items-center justify-center bg-zinc-800 dark:bg-zinc-700 rounded-xl mb-6 group-hover:bg-accent/20 transition-colors">
           <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
         </div>
@@ -243,7 +256,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
         <p class="text-sm text-zinc-400 leading-relaxed">Backend and web applications with Django, Django REST Framework, Node.js, React, MongoDB, REST APIs, authentication and JWT.</p>
       </article>
 
-      <article class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
+      <article class="reveal d4 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
         <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
           <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
         </div>
@@ -268,7 +281,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 
     <div class="project-stack">
 
-      <article class="project-showcase reveal d1" data-project="recall" data-index="0" data-images="assets/images/rv1.png|assets/images/rv2.png|assets/images/rv3.png|assets/images/rv4.png|assets/images/rv5.png" data-alts="Recall Vocab dashboard|Recall Vocab flashcard flow|Recall Vocab word detail|Recall Vocab practice view|Recall Vocab mobile overview">
+      <article class="project-showcase reveal d1" data-project="recall" data-index="0" data-images="assets/images/rv1.png|assets/images/rv2.png|assets/images/rv3.png" data-alts="Recall Vocab dashboard|Recall Vocab flashcard flow|Recall Vocab word detail">
         <div class="project-media">
           <button class="project-arrow left" type="button" data-direction="-1" aria-label="Previous image">
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 5l-5 5 5 5"/></svg>
@@ -291,7 +304,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
           <p>An AI-powered vocabulary learning application built with Django and Supabase. It generates CEFR-level definitions and flashcards to make language learning more structured and personal.</p>
           <div class="project-links">
             <a href="#" class="project-link" aria-label="Play Store link" target="_blank" rel="noopener noreferrer"><img src="assets/icons/playstore2.png" alt="Play Store"></a>
-            <a href="#" class="project-link" aria-label="GitHub repository link" target="_blank" rel="noopener noreferrer"><img src="assets/icons/github.png" alt="GitHub"></a>
+            <a href="https://github.com/Abdulkadir-Partal/RecallVocab" class="project-link" aria-label="GitHub repository link" target="_blank" rel="noopener noreferrer"><img src="assets/icons/github.png" alt="GitHub"></a>
           </div>
         </div>
       </article>
@@ -352,12 +365,12 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
         </div>
       </article>
 
-      <article class="project-showcase reveal d4" data-project="body-language" data-index="0" data-images="assets/images/hb1.png|assets/images/hb2.png|assets/images/hb3.png" data-alts="AI body language analysis|Body language pose detection|Lie detection analysis">
+      <article class="project-showcase reveal d4" data-project="body-language" data-index="0" data-images="assets/images/hb1.png?v=2|assets/images/hb2.png?v=2|assets/images/hb3.png?v=2" data-alts="AI body language analysis|Body language pose detection|Lie detection analysis">
         <div class="project-media">
           <button class="project-arrow left" type="button" data-direction="-1" aria-label="Previous image">
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 5l-5 5 5 5"/></svg>
           </button>
-          <img class="project-image" src="assets/images/hb1.png" alt="AI body language analysis" loading="lazy">
+          <img class="project-image" src="assets/images/hb1.png?v=2" alt="AI body language analysis" loading="lazy">
           <button class="project-arrow right" type="button" data-direction="1" aria-label="Next image">
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 5l5 5-5 5"/></svg>
           </button>
@@ -377,12 +390,12 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
         </div>
       </article>
 
-      <article class="project-showcase reveal d1" data-project="bank-identity" data-index="0" data-images="assets/images/int1.png|assets/images/int2.png|assets/images/int3.png" data-alts="Bank identity verification system|Identity document verification|Face matching mobile app">
+      <article class="project-showcase reveal d1" data-project="bank-identity" data-index="0" data-images="assets/images/int1.png?v=2|assets/images/int2.png?v=2|assets/images/int3.png?v=2" data-alts="Bank identity verification system|Identity document verification|Face matching mobile app">
         <div class="project-media">
           <button class="project-arrow left" type="button" data-direction="-1" aria-label="Previous image">
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 5l-5 5 5 5"/></svg>
           </button>
-          <img class="project-image" src="assets/images/int1.png" alt="Bank identity verification system" loading="lazy">
+          <img class="project-image" src="assets/images/int1.png?v=2" alt="Bank identity verification system" loading="lazy">
           <button class="project-arrow right" type="button" data-direction="1" aria-label="Next image">
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 5l5 5-5 5"/></svg>
           </button>
@@ -537,92 +550,158 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/coursera.png" alt="Coursera" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Generative AI and Large Language Models</h3>
-        <p class="text-sm text-accent font-medium">Coursera</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
       </article>
       <article class="reveal d2 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/coursera.png" alt="Coursera" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Deep Learning with PyTorch</h3>
-        <p class="text-sm text-accent font-medium">Coursera</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
       </article>
       <article class="reveal d3 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/coursera.png" alt="Coursera" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Advanced Machine Learning Techniques</h3>
-        <p class="text-sm text-accent font-medium">Coursera</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
       </article>
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/educba.png" alt="EDUCBA" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Analyze &amp; Design Electrical Load Plans with AutoCAD</h3>
-        <p class="text-sm text-accent font-medium">EDUCBA</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
       </article>
       <article class="reveal d2 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Data Scientist Career Guide and Interview Preparation</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued June 2026</p>
       </article>
       <article class="reveal d3 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Generative AI: Elevate Your Data Science Career</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued May 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued May 2026</p>
       </article>
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Applied Data Science Capstone</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued May 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued May 2026</p>
       </article>
       <article class="reveal d2 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/coursera.png" alt="Coursera" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Foundations of Machine Learning</h3>
-        <p class="text-sm text-accent font-medium">Coursera</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d3 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Machine Learning with Python</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Data Analysis with Python</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d2 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Databases and SQL for Data Science with Python</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d3 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Python Project for Data Science</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Data Science Methodology</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d2 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Tools for Data Science</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d3 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/ibm.png" alt="IBM" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">What is Data Science?</h3>
-        <p class="text-sm text-accent font-medium">IBM</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2026</p>
       </article>
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/pupilica.png" alt="Pupilica" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Agile 101</h3>
-        <p class="text-sm text-accent font-medium">Pupilica</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2025 · Expired April 2025</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2025 · Expired April 2025</p>
       </article>
       <article class="reveal d2 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/pupilica.png" alt="Pupilica" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Agile 101: Interview Techniques</h3>
-        <p class="text-sm text-accent font-medium">Pupilica</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2025</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2025</p>
       </article>
       <article class="reveal d3 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/softtech.png" alt="Softtech" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Softtech Interview Techniques Certificate</h3>
-        <p class="text-sm text-accent font-medium">Softtech</p>
       </article>
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-9 h-9 flex items-center justify-center text-sm font-bold tracking-wide text-zinc-600 dark:text-zinc-300">BTK</div>
+          <p class="text-sm text-accent font-medium">BTK Akademi</p>
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Advanced Python Programming from Scratch</h3>
-        <p class="text-sm text-accent font-medium">BTK Akademi</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued May 2025 · Expired May 2025</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued May 2025 · Expired May 2025</p>
       </article>
       <article class="reveal d2 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/intertech.png" alt="interTech" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Advanced Python Programming from Scratch</h3>
-        <p class="text-sm text-accent font-medium">internTech Staj Programı 2023</p>
       </article>
       <article class="reveal d3 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/intertech.png" alt="interTech" class="w-11 h-11 object-contain">
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Internship Achievement Certificate</h3>
-        <p class="text-sm text-accent font-medium">inter-Akademi</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued September 2023</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued September 2023</p>
       </article>
       <article class="reveal d1 bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="assets/icons/boğaziçi.png" alt="Boğaziçi University" class="w-11 h-11 object-contain">
+          <p class="text-sm text-accent font-medium">Engineering Society</p>
+        </div>
         <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Boğaziçi Engineering Summit</h3>
-        <p class="text-sm text-accent font-medium">Engineering Society</p><p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2023</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Issued April 2023</p>
       </article>
     </div>
   </div>
@@ -665,7 +744,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
         </div>
 
         <div class="reveal d2">
-          <form action="https://formspree.io/f/FORM_ID" method="POST">
+          <form action="https://formspree.io/f/mkjndane" method="POST">
             <div class="flex flex-col gap-4">
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
